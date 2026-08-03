@@ -55,6 +55,14 @@ function Home() {
     <div className="min-h-screen bg-background">
       <Nav />
       <main>
+        {/* Image Section - Hero se pehle */}
+        <div className="flex justify-center items-center py-8 bg-gradient-to-b from-background to-muted/20">
+          <img 
+            src="/1000033091.webp" 
+            alt="Muhammad Waris - UI/UX Designer" 
+            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl border-4 border-primary/20 hover:scale-105 transition-transform duration-300"
+          />
+        </div>
         <Hero />
         <About />
         <Toolbox />
