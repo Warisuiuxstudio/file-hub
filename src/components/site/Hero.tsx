@@ -1,4 +1,4 @@
-import { ArrowDownRight, Download, Sparkles } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 import { profile, stats } from "@/lib/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -86,7 +86,7 @@ export function Hero() {
                 <p className="text-xs text-muted-foreground">{profile.shortTitle}</p>
               </div>
               <span className="grid size-9 place-items-center rounded-xl bg-brand text-primary-foreground">
-                <Sparkles className="size-4" />
+                <Download className="size-4" />
               </span>
             </div>
           </div>
