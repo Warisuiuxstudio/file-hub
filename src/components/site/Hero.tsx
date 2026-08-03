@@ -74,7 +74,7 @@ export function Hero() {
           />
           <div className="glass animate-float relative overflow-hidden rounded-[2rem] p-3 shadow-luxe">
             <img
-              src={profile.portrait}
+              src="/1000033091.webp"
               alt={`${profile.name}, ${profile.shortTitle}`}
               width={720}
               height={720}
