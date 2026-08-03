@@ -10,7 +10,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 -top-40 h-[520px]"
         style={{ background: "var(--gradient-glow)" }}
       />
-      <div className="relative mx-auto grid w-[min(1180px,92vw)] items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="relative mx-auto w-[min(1180px,92vw)]">
         <div>
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs text-muted-foreground">
@@ -30,10 +30,17 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I'm <span className="text-foreground">{profile.name}</span> — {profile.shortTitle} based in{" "}
-              {profile.location}. {profile.tagline}
-            </p>
+            <div className="flex items-center gap-4 mt-6">
+              <img 
+                src="/1000033091.webp" 
+                alt="Muhammad Waris" 
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-primary shadow-lg flex-shrink-0"
+              />
+              <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
+                I'm <span className="text-foreground font-medium">{profile.name}</span> — {profile.shortTitle} based in{" "}
+                {profile.location}. {profile.tagline}
+              </p>
+            </div>
           </Reveal>
 
           <Reveal delay={240}>
@@ -65,32 +72,6 @@ export function Hero() {
             </dl>
           </Reveal>
         </div>
-
-        <Reveal delay={200} className="relative mx-auto w-full max-w-sm">
-          <div
-            aria-hidden
-            className="absolute -inset-6 rounded-[2.5rem] blur-3xl"
-            style={{ background: "var(--gradient-brand)", opacity: 0.28 }}
-          />
-          <div className="glass animate-float relative overflow-hidden rounded-[2rem] p-3 shadow-luxe">
-            <img
-              src="/1000033091.webp"
-              alt={`${profile.name}, ${profile.shortTitle}`}
-              width={720}
-              height={720}
-              className="aspect-square w-full rounded-[1.5rem] object-cover"
-            />
-            <div className="flex items-center justify-between px-3 py-4">
-              <div>
-                <p className="font-display text-base font-semibold text-foreground">{profile.name}</p>
-                <p className="text-xs text-muted-foreground">{profile.shortTitle}</p>
-              </div>
-              <span className="grid size-9 place-items-center rounded-xl bg-brand text-primary-foreground">
-                <Download className="size-4" />
-              </span>
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
