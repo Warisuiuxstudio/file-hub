@@ -111,7 +111,7 @@ function Gallery({ project }: { project: Project }) {
 }
 
 function CaseStudy() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: Project };
   const index = projects.findIndex((p) => p.slug === project.slug);
   const next = projects[(index + 1) % projects.length]!;
 
