@@ -30,6 +30,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
+      // ✅ GOOGLE VERIFICATION TAG ADD KAREIN:
+      { name: "google-site-verification", content: "x4k7pVayC1Jqtv47_paycAyu0KoVIh_OvDquXk4t2ps" },
     ],
     scripts: [
       {
