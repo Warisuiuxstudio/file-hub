@@ -11,7 +11,6 @@ export function Hero() {
         style={{ background: "var(--gradient-glow)" }}
       />
       <div className="relative mx-auto grid w-[min(1180px,92vw)] items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
-        {/* Left Side - Text */}
         <div>
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs text-muted-foreground">
@@ -67,7 +66,6 @@ export function Hero() {
           </Reveal>
         </div>
 
-        {/* Right Side - Box with Image and Name */}
         <Reveal delay={200} className="relative mx-auto w-full max-w-sm">
           <div
             aria-hidden
@@ -75,7 +73,6 @@ export function Hero() {
             style={{ background: "var(--gradient-brand)", opacity: 0.28 }}
           />
           <div className="glass animate-float relative overflow-hidden rounded-[2rem] p-3 shadow-luxe">
-            {/* Image */}
             <img
               src="/1000033091.webp"
               alt={`${profile.name}, ${profile.shortTitle}`}
@@ -83,7 +80,6 @@ export function Hero() {
               height={720}
               className="aspect-square w-full rounded-[1.5rem] object-cover"
             />
-            {/* Name Below Image */}
             <div className="flex items-center justify-between px-3 py-4">
               <div>
                 <p className="font-display text-base font-semibold text-foreground">{profile.name}</p>
