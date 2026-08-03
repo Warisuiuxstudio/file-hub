@@ -1,24 +1,74 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Footer } from "@/components/site/Footer";
+import { WhatsAppFab } from "@/components/site/WhatsAppFab";
+import { Hero } from "@/components/site/Hero";
+import { Work } from "@/components/site/Work";
+import {
+  About,
+  Availability,
+  Awards,
+  Contact,
+  Faq,
+  Journey,
+  Process,
+  Services,
+  Toolbox,
+} from "@/components/site/Sections";
+import { profile } from "@/lib/portfolio";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Muhammad Waris — Senior UI/UX & Product Designer";
+const description =
+  "Portfolio of Muhammad Waris, UI/UX and product designer in Karachi. Mobile apps, SaaS dashboards, e-commerce and design systems built in Figma.";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "profile" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: profile.name,
+          jobTitle: "Senior UI/UX Designer",
+          email: profile.email,
+          telephone: profile.phone,
+          address: { "@type": "PostalAddress", addressLocality: "Karachi", addressCountry: "PK" },
+          sameAs: [profile.behance, profile.linkedin, profile.upwork],
+        }),
+      },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Toolbox />
+        <Work />
+        <Services />
+        <Process />
+        <Awards />
+        <Journey />
+        <Availability />
+        <Faq />
+        <Contact />
+      </main>
+      <Footer />
+      <WhatsAppFab />
     </div>
   );
 }
