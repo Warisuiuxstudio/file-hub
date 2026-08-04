@@ -145,10 +145,18 @@ function CaseStudy() {
             </Reveal>
 
             <Reveal delay={100} className="mt-10">
-              <div
-                className="h-64 rounded-3xl sm:h-80"
-                style={{ background: `linear-gradient(140deg, ${project.accent}, transparent 75%)` }}
-              />
+              {project.cover ? (
+                <img
+                  src={project.cover}
+                  alt={`${project.title} — ${project.subtitle}`}
+                  className="max-h-[520px] w-full rounded-3xl border border-border object-cover"
+                />
+              ) : (
+                <div
+                  className="h-64 rounded-3xl sm:h-80"
+                  style={{ background: `linear-gradient(140deg, ${project.accent}, transparent 75%)` }}
+                />
+              )}
             </Reveal>
 
             <Reveal delay={140} className="glass mt-8 grid gap-6 rounded-3xl p-6 sm:grid-cols-3 lg:grid-cols-6">
