@@ -34,7 +34,7 @@ export function Work() {
         <SectionHeading
           eyebrow="Selected work"
           title="Case studies, presented properly"
-          description="Every project opens as a full case study page. The layout, storytelling and galleries are ready — drop your real Figma screens in and they arrange themselves."
+          description="Nine real product design projects — banking, healthcare, commerce, travel, hospitality and e-learning. Every card opens a full case study with the original screens, flows and design system."
         />
 
         <Reveal className="mt-10 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
