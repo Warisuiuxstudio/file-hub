@@ -149,7 +149,7 @@ function CaseStudy() {
                 <img
                   src={project.cover}
                   alt={`${project.title} — ${project.subtitle}`}
-                  className="max-h-[520px] w-full rounded-3xl border border-border object-cover"
+                  className="max-h-[560px] w-full rounded-3xl border border-border bg-muted/30 object-contain"
                 />
               ) : (
                 <div
