@@ -146,11 +146,13 @@ function CaseStudy() {
 
             <Reveal delay={100} className="mt-10">
               {project.cover ? (
-                <img
-                  src={project.cover}
-                  alt={`${project.title} — ${project.subtitle}`}
-                  className="max-h-[560px] w-full rounded-3xl border border-border bg-muted/30 object-contain"
-                />
+                <div className="h-[420px] overflow-hidden rounded-3xl border border-border bg-muted/30 sm:h-[560px]">
+                  <img
+                    src={project.cover}
+                    alt={`${project.title} — ${project.subtitle}`}
+                    className="size-full object-contain"
+                  />
+                </div>
               ) : (
                 <div
                   className="h-64 rounded-3xl sm:h-80"
