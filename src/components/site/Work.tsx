@@ -94,7 +94,21 @@ export function Work() {
                     minHeight: i % 3 === 1 ? 320 : 250,
                   }}
                 >
-                  <div className="flex items-start justify-between gap-4">
+                  {p.cover ? (
+                    <>
+                      <img
+                        src={p.cover}
+                        alt={`${p.title} — ${p.subtitle}`}
+                        loading="lazy"
+                        className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div
+                        aria-hidden
+                        className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-background/10"
+                      />
+                    </>
+                  ) : null}
+                  <div className="relative flex items-start justify-between gap-4">
                     <span className="rounded-full bg-background/70 px-3 py-1 text-xs text-foreground">
                       {p.category}
                     </span>
@@ -102,7 +116,7 @@ export function Work() {
                       <ArrowUpRight className="size-4" />
                     </span>
                   </div>
-                  <div className="mt-16">
+                  <div className="relative mt-16">
                     <p className="text-xs uppercase tracking-[0.2em] text-foreground/70">{p.year}</p>
                     <h3 className="mt-1 text-2xl font-semibold text-foreground">{p.title}</h3>
                     <p className="mt-1 text-sm text-foreground/80">{p.subtitle}</p>
