@@ -28,7 +28,7 @@ export const stats = [
   { value: "5+", label: "Years designing" },
   { value: "40+", label: "Products shipped" },
   { value: "20+", label: "Happy clients" },
-  { value: "6", label: "Featured case studies" },
+  { value: "9", label: "Featured case studies" },
 ];
 
 export const awards = [
