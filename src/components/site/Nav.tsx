@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, Moon, Sun, X, Download } from "lucide-react";
 import { profile } from "@/lib/portfolio";
 import { cn } from "@/lib/utils";
+import warisAvatar from "@/assets/waris-avatar.webp.asset.json";
 
 const links = [
   { label: "About", href: "/#about" },
@@ -59,9 +60,14 @@ export function Nav() {
           )}
         >
           <Link to="/" className="flex items-center gap-3">
-            <span className="grid size-9 place-items-center rounded-xl bg-brand text-sm font-semibold text-primary-foreground">
-              MW
-            </span>
+            <img
+              src={warisAvatar.url}
+              alt={profile.name}
+              width={36}
+              height={36}
+              loading="eager"
+              className="size-9 rounded-xl object-cover ring-1 ring-border"
+            />
             <span className="hidden text-sm font-medium text-foreground sm:block">
               {profile.name}
             </span>
