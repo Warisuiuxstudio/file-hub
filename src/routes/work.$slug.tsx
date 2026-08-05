@@ -69,6 +69,7 @@ function Gallery({ project }: { project: Project }) {
                 title={item.caption ?? `${project.title} embed ${i + 1}`}
                 src={item.src}
                 loading="lazy"
+                decoding="async"
                 allowFullScreen
                 className="aspect-video w-full rounded-2xl border border-border"
               />
@@ -81,6 +82,7 @@ function Gallery({ project }: { project: Project }) {
                   src={item.src}
                   alt={item.caption ?? `${project.title} screen ${i + 1}`}
                   loading="lazy"
+                  decoding="async"
                   className="w-full transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </button>

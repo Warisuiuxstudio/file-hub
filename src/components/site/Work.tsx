@@ -100,6 +100,7 @@ export function Work() {
                         src={p.cover}
                         alt={`${p.title} — ${p.subtitle}`}
                         loading="lazy"
+                        decoding="async"
                         className="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div
