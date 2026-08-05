@@ -99,10 +99,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Muhammad Waris — Senior UI/UX & Product Designer" },
       {
         property: "og:description",
-        content: "Mobile apps, SaaS dashboards, e-commerce and design systems designed in Figma.",
+        content: "Portfolio of Muhammad Waris — UI/UX and product designer crafting mobile apps, SaaS dashboards and design systems in Figma.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Muhammad Waris — Senior UI/UX & Product Designer" },
+      { name: "twitter:description", content: "Portfolio of Muhammad Waris — UI/UX and product designer crafting mobile apps, SaaS dashboards and design systems in Figma." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cbf64c99-6cf1-48de-af00-15ac691091ed/id-preview-2b09a38a--cba7cad0-27c7-4d10-95b2-928959825d03.lovable.app-1785888799125.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cbf64c99-6cf1-48de-af00-15ac691091ed/id-preview-2b09a38a--cba7cad0-27c7-4d10-95b2-928959825d03.lovable.app-1785888799125.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
