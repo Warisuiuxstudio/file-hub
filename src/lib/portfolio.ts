@@ -327,7 +327,6 @@ export const projects: Project[] = [
       { type: "image", src: "/__l5e/assets-v1/5f6ce38d-7878-4daf-8065-096348ef8b8c/Background_7.png", caption: "Premium banners and promotional cards" },
       { type: "image", src: "/__l5e/assets-v1/4ff123f7-e82e-46e8-a1f0-ae21c8a82975/Mockup_4.png", caption: "Premium quality food product screen" },
       { type: "image", src: "/__l5e/assets-v1/e035b824-118c-47ab-a02d-01158931ef3f/Mockup_7_1.png", caption: "Device mockups — toys and pet care" },
-      { type: "image", src: "/__l5e/assets-v1/14e304d2-56d5-48e3-b1ae-838162ed50d1/pet.png", caption: "Full screen flow overview" },
     ],
   },
   {
@@ -398,7 +397,6 @@ export const projects: Project[] = [
       { type: "image", src: "/__l5e/assets-v1/71b31554-cefe-41ee-9186-d13af35dcc85/Mockup_25.png", caption: "Top rated salons near you" },
       { type: "image", src: "/__l5e/assets-v1/489eeaa5-f0ae-4c50-9a94-955030913103/Mockup_30.png", caption: "Meet our top stylists" },
       { type: "image", src: "/__l5e/assets-v1/4bd99d3b-2b42-475c-825b-5406c7f40014/Mockup_30-1.png", caption: "Booking flow on desktop and mobile" },
-      { type: "image", src: "/__l5e/assets-v1/67c0042a-42ca-45bb-a4b5-4e20aaab032a/Premium_Salon_Booking_Homepage.png", caption: "Full homepage layout" },
       { type: "image", src: "/__l5e/assets-v1/73a4ff40-13b8-4ff2-bb73-3848df909405/Mockup_19.png", caption: "Device presentation" },
     ],
   },
@@ -469,7 +467,6 @@ export const projects: Project[] = [
       { type: "image", src: "/__l5e/assets-v1/ac9f4705-3584-4fd5-961a-a97d8035d99e/MacBook_01.png", caption: "Rooted in Nature — brand landing" },
       { type: "image", src: "/__l5e/assets-v1/21f651cd-2b5d-4cd4-9326-c90dc4225f3e/story.png", caption: "Rooted in respect for the earth" },
       { type: "image", src: "/__l5e/assets-v1/a613140a-4657-4140-8436-0df8fe6d8a22/journal.png", caption: "Notes from the Wild journal" },
-      { type: "image", src: "/__l5e/assets-v1/dc161e4c-fcaf-4915-818e-51a48ff7b6ba/home.png", caption: "Full homepage layout" },
       { type: "image", src: "/__l5e/assets-v1/bc60e537-b008-40b1-b273-7775a901565b/contact.png", caption: "Contact experience" },
       { type: "image", src: "/__l5e/assets-v1/b96eb0b1-14e4-4de5-959f-ff416b57fe61/Mockup_25-2.png", caption: "Device presentation" },
       { type: "image", src: "/__l5e/assets-v1/03837acd-f330-4eef-a2bd-fd8e9aa2a912/MacBook_Air_2022.png", caption: "Journal on desktop" },
@@ -508,7 +505,6 @@ export const projects: Project[] = [
       { type: "image", src: "/__l5e/assets-v1/2394561b-3cdd-4c6c-9394-2acc2ab3036f/5_1.png", caption: "Property details and community" },
       { type: "image", src: "/__l5e/assets-v1/92dddb2e-555c-4d48-a4b5-51a74208880a/6.png", caption: "Chat interface and booking dashboard" },
       { type: "image", src: "/__l5e/assets-v1/41bcdac5-d361-425a-b88f-3b860e341702/7.png", caption: "Filter modal and profile" },
-      { type: "image", src: "/__l5e/assets-v1/410be9c7-e717-4585-b257-2272e345a81e/Background_4.png", caption: "Full screen flow overview" },
     ],
   },
 ];
