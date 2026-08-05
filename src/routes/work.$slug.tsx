@@ -81,6 +81,7 @@ function Gallery({ project }: { project: Project }) {
                   src={item.src}
                   alt={item.caption ?? `${project.title} screen ${i + 1}`}
                   loading="lazy"
+                  decoding="async"
                   className="w-full transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </button>
