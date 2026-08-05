@@ -69,7 +69,6 @@ function Gallery({ project }: { project: Project }) {
                 title={item.caption ?? `${project.title} embed ${i + 1}`}
                 src={item.src}
                 loading="lazy"
-                decoding="async"
                 allowFullScreen
                 className="aspect-video w-full rounded-2xl border border-border"
               />
